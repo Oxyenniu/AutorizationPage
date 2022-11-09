@@ -12,38 +12,36 @@ class MainViewController: UIViewController {
     @IBOutlet var nameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    let login = "user"
+    let password = "qwerty"
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any? ) {
         guard let welcomPageVC = segue.destination as?  welcomePageViewController else { return }
-        welcomPageVC.welcomName = "Welcome, \((nameTF.text ?? ""))"
+        welcomPageVC.welcomName = login
     }
     
-    @IBAction func tapForHideKeyboard(_ sender: UITapGestureRecognizer) {
-        nameTF.resignFirstResponder()
-        passwordTF.resignFirstResponder()
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
     @IBAction func logInButtonTapped() {
-        if let inputNames = nameTF.text, inputNames != "user" {
+        guard nameTF.text == login, passwordTF.text == password else {
             showAlert("Invalid login or password", "Please, enter correct login and password")
-        }else if let inputPassword = passwordTF.text, inputPassword != "qwerty" {
-            showAlert("Invalid login or password", "Please, enter correct login and password")
+            return
         }
+        performSegue(withIdentifier: "welcomPageVC", sender: nil)
     }
     
     @IBAction func forgotNameButtonTapped() {
-        showAlert("Oops", "Your name is user")
+        showAlert("Oops", "Your name is \(login)")
     }
     
     @IBAction func forgotPasswordButtonTapped() {
-        showAlert("Oops", "Your password is qwerty")
+        showAlert("Oops", "Your password is \(password)")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        guard let _ = segue.source as?  welcomePageViewController else { return }
         nameTF.text = ""
         passwordTF.text = ""
     }
@@ -52,10 +50,11 @@ class MainViewController: UIViewController {
 // MARK: UIAlertControllers
 
 extension MainViewController {
-    private func showAlert(_ title: String, _ message: String) {
-        let logInAlert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        logInAlert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {action in} ))
-        present(logInAlert, animated: true)
+    private func showAlert(_ title: String, _ message: String, textField: UITextField? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "OK", style: .default) { _ in textField?.text = "" }
+        alert.addAction(alertAction)
+        present(alert, animated: true)
     }
 }
 

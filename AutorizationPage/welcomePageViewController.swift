@@ -13,17 +13,12 @@ class welcomePageViewController: UIViewController {
     
     var welcomName: String!
     
-    var nameTF: String!
-    var passwordTF: String!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLabel.text = welcomName
-    
+        welcomeLabel.text = "Welcome, \(welcomName ?? "")"
     }
     
     @IBAction func logOutButtonTapped() {
-        dismiss(animated: true)
         welcomName = ""
     }
     
