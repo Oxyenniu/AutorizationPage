@@ -16,8 +16,15 @@ class MainViewController: UIViewController {
     let password = "qwerty"
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any? ) {
-        guard let welcomPageVC = segue.destination as?  welcomePageViewController else { return }
-        welcomPageVC.welcomName = login
+        guard let tabBarVC = segue.destination as?  UITabBarController else { return }
+        guard let viewControllers = tabBarVC.viewControllers else { return }
+        for viewController in viewControllers {
+            if let welcomPageVC = viewController as? welcomePageViewController {
+                welcomPageVC.welcomName = login
+            } else if let firstVC = viewController as? FirstViewController {
+                firstVC.welcomName = login
+            }
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

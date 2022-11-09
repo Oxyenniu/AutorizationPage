@@ -88,14 +88,14 @@
                     <connections>
                         <outlet property="nameTF" destination="cfk-uI-vgx" id="wub-d9-zGi"/>
                         <outlet property="passwordTF" destination="AmN-Oz-9Xa" id="I8z-Gi-l2u"/>
-                        <segue destination="Rzs-L6-lc0" kind="presentation" identifier="welcomPageVC" modalPresentationStyle="fullScreen" id="l5w-HW-t17"/>
+                        <segue destination="x0q-fR-dMc" kind="presentation" identifier="welcomPageVC" modalPresentationStyle="fullScreen" id="l5w-HW-t17"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.8169014084507045"/>
         </scene>
-        <!--Welcome Page View Controller-->
+        <!--First-->
         <scene sceneID="ZYb-WK-6ya">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Rzs-L6-lc0" customClass="welcomePageViewController" customModule="AutorizationPage" customModuleProvider="target" sceneMemberID="viewController">
@@ -141,6 +141,7 @@
                             <constraint firstItem="lPf-bT-F8i" firstAttribute="top" secondItem="TkB-He-5kR" secondAttribute="bottom" constant="200" id="xBa-B4-TOW"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="First" image="homekit" catalog="system" id="RU3-4G-CnN"/>
                     <navigationItem key="navigationItem" id="mcf-A1-haf"/>
                     <connections>
                         <outlet property="welcomeLabel" destination="pf7-pa-s3Q" id="8uG-q3-Eej"/>
@@ -149,11 +150,138 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDs-rm-ymt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="GJD-HI-46N" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="739.69465648854964" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="484" y="772"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="bk2-nJ-QIj">
+            <objects>
+                <viewController id="zPf-vO-EF6" customClass="FirstViewController" customModule="AutorizationPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mzI-cS-U4R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="fJn-PO-dgR">
+                                <rect key="frame" x="16" y="282" width="201" height="103"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="JvM-1f-hET">
+                                        <rect key="frame" x="0.0" y="0.0" width="201" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Russia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbT-a0-pak">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moskow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSz-0G-ZCU">
+                                                <rect key="frame" x="138" y="0.0" width="63" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="yCx-fI-eVL">
+                                        <rect key="frame" x="0.0" y="27.5" width="201" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poland" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddG-zm-2ZY">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warsaw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc6-57-Qnf">
+                                                <rect key="frame" x="138" y="0.0" width="63" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="woV-L4-D9m">
+                                        <rect key="frame" x="0.0" y="55" width="201" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ukraine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1St-dI-ZQ6">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kyev" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vj2-Dr-IaC">
+                                                <rect key="frame" x="138" y="0.0" width="63" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="9xX-Ki-BCd">
+                                        <rect key="frame" x="0.0" y="82.5" width="201" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Georgia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrO-cF-ya5">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tbilisi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebU-sI-30O">
+                                                <rect key="frame" x="138" y="0.0" width="63" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlT-9f-xW6">
+                                <rect key="frame" x="16" y="180" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aW5-Ki-hw6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fJn-PO-dgR" firstAttribute="centerY" secondItem="mzI-cS-U4R" secondAttribute="centerY" id="0fs-TT-KOH"/>
+                            <constraint firstItem="LlT-9f-xW6" firstAttribute="top" secondItem="aW5-Ki-hw6" secondAttribute="top" constant="180" id="DUc-wm-XBG"/>
+                            <constraint firstItem="aW5-Ki-hw6" firstAttribute="trailing" secondItem="LlT-9f-xW6" secondAttribute="trailing" constant="16" id="b9e-AX-tR1"/>
+                            <constraint firstItem="fJn-PO-dgR" firstAttribute="leading" secondItem="aW5-Ki-hw6" secondAttribute="leading" constant="16" id="iCl-1h-Ncw"/>
+                            <constraint firstItem="LlT-9f-xW6" firstAttribute="leading" secondItem="aW5-Ki-hw6" secondAttribute="leading" constant="16" id="xta-AJ-BRZ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="globe.desk.fill" catalog="system" id="d9L-Mu-8w3"/>
+                    <connections>
+                        <outlet property="welcomeUserLabel" destination="LlT-9f-xW6" id="Pe3-Jg-C5z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HSv-Tw-3hO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="771"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ys8-hG-FDQ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="x0q-fR-dMc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aOf-hC-LpO">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Rzs-L6-lc0" kind="relationship" relationship="viewControllers" id="CSl-YJ-R7N"/>
+                        <segue destination="zPf-vO-EF6" kind="relationship" relationship="viewControllers" id="6cD-zk-l35"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LAG-hc-uqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="738.39999999999998" y="-2.2488755622188905"/>
         </scene>
     </scenes>
     <resources>
         <image name="Cмайлик_приветствия" width="600" height="567"/>
+        <image name="globe.desk.fill" catalog="system" width="115" height="128"/>
+        <image name="homekit" catalog="system" width="128" height="104"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

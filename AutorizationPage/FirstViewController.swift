@@ -1,46 +1,46 @@
 //
-//  welcomePageViewController.swift
+//  FirstViewController.swift
 //  AutorizationPage
 //
-//  Created by Oxyenniu on 06.11.2022.
+//  Created by Oxyenniu on 09.11.2022.
 //
 
 import UIKit
 
-class welcomePageViewController: UIViewController {
+class FirstViewController: UIViewController {
 
-    @IBOutlet var welcomeLabel: UILabel!
+    @IBOutlet var welcomeUserLabel: UILabel!
+    
     
     var welcomName: String!
     
     private let firstPallete = UIColor(
-        red: 54/255,
-        green: 2/255,
-        blue: 132/255,
+        red: 164/255,
+        green: 200/255,
+        blue: 80/255,
         alpha: 1
     )
     
     private let secondPallete = UIColor(
-        red: 167/255,
-        green: 234/255,
-        blue: 32/255,
+        red: 90/255,
+        green: 54/255,
+        blue: 190/255,
         alpha: 1
     )
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.VerticalGradientLayer(topColor: firstPallete, bottomColor: secondPallete)
-        welcomeLabel.text = "Welcome, \(welcomName ?? "")"
+        welcomeUserLabel.text = "My name is \(welcomName ?? "") and this my favorite countries"
     }
     
-    @IBAction func logOutButtonTapped() {
-        welcomName = ""
-    }
+    
 }
+
 
 // MARK: - Set background color
 extension UIView {
-    func VerticalGradientLayer(topColor: UIColor, bottomColor: UIColor) {
+    func verticalGradientLayer(topColor: UIColor, bottomColor: UIColor) {
         let gradient = CAGradientLayer()
         gradient.frame = bounds
         gradient.colors = [topColor.cgColor, bottomColor.cgColor]
