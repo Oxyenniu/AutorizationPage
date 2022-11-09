@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E6A737EC291C3B3C00254508 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A737EB291C3B3C00254508 /* FirstViewController.swift */; };
+		E6A737F0291C498E00254508 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A737EF291C498E00254508 /* MoreInfoViewController.swift */; };
 		E6C74783291504090075CA41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C74782291504090075CA41 /* AppDelegate.swift */; };
 		E6C74785291504090075CA41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C74784291504090075CA41 /* SceneDelegate.swift */; };
 		E6C74787291504090075CA41 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C74786291504090075CA41 /* MainViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		E6A737EB291C3B3C00254508 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		E6A737EF291C498E00254508 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 		E6C7477F291504090075CA41 /* AutorizationPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutorizationPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C74782291504090075CA41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6C74784291504090075CA41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				E6C74786291504090075CA41 /* MainViewController.swift */,
 				E6F7224C2917C0F00052BC43 /* welcomePageViewController.swift */,
 				E6A737EB291C3B3C00254508 /* FirstViewController.swift */,
+				E6A737EF291C498E00254508 /* MoreInfoViewController.swift */,
 				E6C74788291504090075CA41 /* Main.storyboard */,
 				E6C7478B2915040C0075CA41 /* Assets.xcassets */,
 				E6C7478D2915040C0075CA41 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				E6A737EC291C3B3C00254508 /* FirstViewController.swift in Sources */,
 				E6C74787291504090075CA41 /* MainViewController.swift in Sources */,
 				E6C74783291504090075CA41 /* AppDelegate.swift in Sources */,
+				E6A737F0291C498E00254508 /* MoreInfoViewController.swift in Sources */,
 				E6F7224D2917C0F00052BC43 /* welcomePageViewController.swift in Sources */,
 				E6C74785291504090075CA41 /* SceneDelegate.swift in Sources */,
 			);
