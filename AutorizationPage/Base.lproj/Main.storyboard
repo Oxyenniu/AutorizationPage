@@ -99,7 +99,7 @@
         <scene sceneID="ZYb-WK-6ya">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Rzs-L6-lc0" customClass="welcomePageViewController" customModule="AutorizationPage" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Glx-qW-Rfx" customClass="welc">
+                    <view key="view" contentMode="scaleToFill" id="Glx-qW-Rfx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
